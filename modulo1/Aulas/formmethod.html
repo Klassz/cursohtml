@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form,formaction,formmethod, formenctype...</title>
+</head>
+<body>
+    <form action="" id="form-cadastro" name="form">
+        email: <br>
+        <input type="email" name="email" required> 
+        <input type="submit" name="cadastrar" formenctype="application/x-www-form-urlencoded" formmethod="get" formaction="cadastrar.php" value="cadastrar">
+        <input type="submit" name="enviar-por-email" formenctype="application/x-www-form-urlencoded" formmethod="post" formaction="enviar-email.php" value="Enviar por email">
+
+    </form>
+
+    nome: <br>
+    <input type="text" name="nome" form="form-cadastro">
+</body>
+</html>
